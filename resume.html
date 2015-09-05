@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>Bhavika's Resume</title>
+	<link href='http://fonts.googleapis.com/css?family=Teko' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+ 
+<style>
+	#wrapper{
+		position: relative;
+		margin: 0 auto;
+		padding: 0 50px 0 50px;
+		padding-bottom: 50px;
+		width: 50%;
+	}
+
+	header{
+		position: relative;
+		width: 100%;
+		display: block;
+		background-color: #333;
+		padding-top: 20px;
+		text-align: right;
+		padding-right: 21px;
+	}
+	nav ul{
+		font-family: sans-serif;
+		font-size: 16px;
+	}
+	
+	section{
+		background-color:rgba(255, 255, 255, 0.4);
+		padding: 20px;
+		display: block;
+		border: 2px solid #bdbdbd;
+		font-size: inherit;
+		width: 97%;
+	}
+	
+	article{
+		border-right: 3px solid  #6A6A6A;
+		border-bottom: 3px solid #6A6A6A;
+		padding-top: 0;
+		padding-right: 20px;
+		padding-bottom: 10px;
+		background-color:#F2E8D0;
+		margin-bottom: 10px;
+		opacity:1.0;
+		-webkit-border-top-right-radius: 30px;
+		-moz-border-radius-topright: 30px;
+		border-top-right-radius: 30px;
+	}
+	
+	footer{
+		clear: both;
+		display: block;
+		text-align: center;
+		background-color:#333333;
+		color:#E9D5A0;
+		padding:5px;
+		-webkit-border-bottom-left-radius: 20px;
+		-moz-border-radius-bottomleft: 20px;
+		border-bottom-left-radius: 20px;
+	}
+	
+	.imgBorder{
+		margin-left:20px;
+		border: 8px solid #A7A18C;
+		padding:10px;
+		background-image: url(images/border.jpg);
+		background-repeat: no-repeat;
+		display: block;
+		width: 160px;
+		height: 200px;
+		z-index: 5;
+	}
+	
+	.imgfloat{
+		float: left;
+		margin-right: 20px;	
+	}
+	
+	body{
+		background-color: #151515;
+		font-family: "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	}
+	
+	.columns {
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+	}
+
+	aside{
+		float: right;
+	}
+	
+	p{
+		color:#fff;
+		text-align:right;
+	}
+	
+	ul.none{
+		list-style-type: none;
+	}
+	
+	ul{
+		font-size: 14px;
+		list-style-type: square;
+	}
+
+	h1{
+		font-family: 'Teko', sans-serif;
+		font-weight: bolder;
+		font-size: 24px;
+		text-indent: 10px;
+		color: #661C31;
+		background-color: #DEDB9C;
+		margin-right: -17px; <!---20px;-->
+		-webkit-border-top-right-radius: 30px;
+		-moz-border-radius-topright: 30px;
+		border-top-right-radius: 30px;
+		top: 0px;
+	}
+	
+	h2 {
+		color: rgb(120, 175, 231);
+		position: relative;
+		animation: move 5s infinite;
+	}	
+	
+	@keyframes move {
+		from {left: 0px;}
+		to {left: 600px;}
+	}
+	
+	h3{
+		text-indent: 10px;
+		font-size: 14px;
+	
+	}
+	.cornerTop{
+		-webkit-border-top-right-radius: 30px;
+		-moz-border-radius-topright: 30px;
+		border-top-right-radius: 30px;
+	}
+	
+	.cornerBottom{
+		-webkit-border-bottom-left-radius: 30px;
+		-moz-border-radius-bottomleft: 30px;
+		border-bottom-left-radius: 30px;
+	}
+	
+	.resume{
+		font-family: 'Teko', sans-serif;
+		font-size: 36px;
+		font-weight: bolder;
+		color: #D8E3E5;
+		top: 0px;
+	}
+	
+
+	@media screen and (max-width: 1430px){
+
+		header.cornerTop {
+			padding-left: 10px;
+		}
+		
+		.imgBorder {
+			    margin-left: 1%;
+		}
+		
+		h2 {
+			color: rgb(120, 175, 231);
+			position: relative;
+			animation: move 5s infinite;
+		}	
+	
+		@keyframes move {
+			from {left: 0px;}
+			to {left: 400px;}
+		}
+	}
+	
+	@media screen and (max-width: 700px){
+	
+		header.cornerTop {
+			padding-left: 14px;
+		}
+		
+		ul.columns {
+			display: inline;
+		}
+		
+		h2 {
+			color: rgb(120, 175, 231);
+			position: relative;
+			animation: move 5s infinite;
+		}	
+	
+		@keyframes move {
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+	}
+	
+	@media screen and (max-width: 450px){
+	
+		header.cornerTop {
+			padding-left: 9%;
+		}
+		
+		.imgBorder {
+			margin-left: 1%;
+		}
+	
+		ul.columns {
+			display: inline;
+		}
+		
+		h2 {
+			color: rgb(120, 175, 231);
+			position: relative;
+			animation: move 5s infinite;
+		}	
+	
+		@keyframes move {
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+	}
+	
+</style>
+	</head>	
+  
+	<body>
+		<nav>
+			<ul>	
+				<a href="index.html"><li>About</li></a>
+				<li class="current"><a href="#">Resume</a></li>
+				<a href="projects.html"><li>Projects</li></a>
+			</ul> 	
+			<div class="handle" style="text-align:right"><span style="float:left">Menu </span>&#9776</div>			
+		</nav>
+	
+	<div id="wrapper">
+		<h2>Resume</h2>
+		<header class="cornerTop">
+			<img src="images/bhavika2.png"  width="155" height="200" alt="Bhavika" class="imgBorder imgfloat">
+			<span class="resume">Bhavika Patel</span>
+			<br/><br/><br/>
+			<p>21172 Mission Blvd<br/>
+			Hayward, CA 94541<br/>
+			510-435-9093<br/>
+			Bhavika19p@gmail.com</p>
+		</header>
+	
+	<section class="cornerBottom">
+		<article class="cornerTop">
+			<h1>Objective</h1>
+			<ul style="list-style-type:none">
+			<li>I want to pursue my career in software engineering or web development environment that will not only challenge my analytical and problem solving skills but also help me gain valuable experience and enhance my skills that I gained as part of my degree course and academic projects.</li>
+		</article>
+	
+		<article>
+			<h1>Skills</h1>
+			<div>
+				<ul class="columns" data-columns="2">
+					<ul><li>Structured Query Language (SQL)</li></ul>
+					<ul><li>Working knowledge of JavaScript and JQuery</li></ul>
+					<ul><li>Programming and designing skills</li></ul>
+					<ul><li>HTML/HTML5</li></ul>
+					<ul><li>Cascading Style Sheet (CSS)/ CSS3</li></ul>
+					<ul><li>Adobe Photoshop CS6</li></ul>
+					<ul><li>Wordpress</li></ul>
+					<ul><li>MS Office</li></ul>
+				</ul>
+			</div>
+	
+			<h1>Work Experience</h1>	 
+			<ul style="list-style-type:none">
+					<h3><aside>(12/14—Present)</aside> Website Development, Pinnacle Technology Services – Salinas, CA</h3>
+				<ul>
+						<li>Developed website mock-ups for clients to ensure quality control and client satisfaction before project development phase.</li>
+						<li>Responsible for implementation of new mainframe development project.</li>
+						<li>Website development includes: Wordpress, CSS, HTML, Adobe Photoshop CS6, and SQL.</li></ul>
+		   
+					<h3><aside>(09/14—11/14)</aside> Website Development - Intern, Pinnacle Technology Services – Salinas, CA</h3>
+				<ul>
+						<li>Designed and implemented websites.</li>
+						<li>Website development includes: Wordpress, CSS, HTML, Adobe Photoshop CS6, and SQL.</li>
+				</ul>
+	   
+					<h3><aside>(10/13—08/14)</aside> Sales Associate, Sears – Hayward, CA</h3>
+				<ul>
+					<li>Processing customer transactions, including sales, returns, and exchanges in accordance with authorized procedures.</li>
+					<li>Providing excellent customer service.</li>
+				</ul>	 
+  
+					<h3><aside>(04/14—06/14)</aside> Data Entry (Seasonal), Bank Of America – Hayward, CA</h3>
+				<ul>
+					<li>Data Entry</li>
+					<li>Processing Tax Return</li>
+				</ul>
+
+					<h3><aside>(09/12—06/13)</aside> Reader(Grader), California State University – Hayward, CA</h3>
+				<ul>
+					<li>Grading student’s assignments and recording grades with excel.</li>
+					<li>Graded assignments for: Discrete Math, Introduction to System Programming, Assembly Language, and Compiler Design.</li>
+				</ul>
+			</ul>
+
+			<h1>Educational Background</h1>	
+			<ul style="list-style-type:none">	   
+					<h3><aside>(07/09—06/13)</aside> BS in Computer Science, California State University – Hayward, CA</h3>
+				<ul>
+					<li>Cumulative GPA of 3.558</li>
+					<li>Honor’s List Winter 2012</li>
+					<li>Dean’s List Spring 2011	</li>
+				</ul>
+			</ul>
+
+		</article>
+		
+	<footer>
+	 References are available upon request.	 
+	</footer>
+
+	</section>
+		<script>
+			$('.handle').on('click', function(){
+				$('nav ul').toggleClass('showing');
+			});
+		</script> 
+  
+	</div>
+	</body>
+ </html>
+	
