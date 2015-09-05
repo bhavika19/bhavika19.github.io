@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+    <title>Bhavika Patel</title>
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+  <style>
+  
+
+	img {
+		float: left;
+		max-width: 90%;
+		height: auto;
+	    margin: 0 190px 0 0;
+		background-color: #003366;
+		padding:1%;
+	}
+	
+	body{
+		background-color: #151515;
+	}
+	
+	h1 {
+		color: white;
+		text-shadow:1px 4px 13px white, 18px 48px 91px blue, 0 0 55px darkblue;
+		text-align: center;
+	}
+		   
+	h2 {
+		color: rgb(120, 175, 231);
+		position: relative;
+		animation: move 5s infinite;
+	}	
+	
+	@keyframes move {
+		from {left: 0px;}
+		to {left: 600px;}
+	}
+	
+	@media screen and (max-width: 1280px){
+
+		h2 {
+			color: rgb(120, 175, 231);
+			position: relative;
+			animation: move 5s infinite;
+		}	
+	
+		@keyframes move {
+			from {left: 0px;}
+			to {left: 400px;}
+		}
+	}
+	
+	@media screen and (max-width: 900px){
+
+		h2 {
+			color: rgb(120, 175, 231);
+			position: relative;
+			animation: move 5s infinite;
+		}	
+	
+		@keyframes move {
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+	}
+  </style>
+  </head>	
+  
+  <body>	
+	<header>
+		<h1>Bhavika Patel</h1>
+        <p>I am Front-End Web Developer striving to improve my skill set daily.</p>
+	</header>
+		<nav>
+			<ul>
+				<li class="current"><a href="#">About</a></li>
+				<a href="resume.html"><li>Resume</li></a>
+				<a href="projects.html"><li>Projects</li></a>
+			</ul>
+			<div class="handle" style="text-align:right"><span style="float:left">Menu </span>&#9776</div>	
+		</nav>
+	
+	<section>
+		<img src="img/bhavika.png" alt="my new photo">
+		<h2>About</h2>
+		<div style="color: white;">My name is Bhavika and I am a web developer. I create beautiful and functional websites, whether it is from scratch or using a ready made template. One thing that I really enjoy about web development is, to learn. Even though I have not been designing websites for too long my curiosity and my determination to learn new things shaped me to be the person I am today. Now, I am hoping to solidify my career as a front end web developer at a growth oriented company that will share and develop my knowledge. 
+		</div>
+	</section>
+	
+	<script>
+		$('.handle').on('click', function(){
+			$('nav ul').toggleClass('showing');
+		});
+	</script> 
+	
+	</body>
+</html>
